@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Nawabi Kacchi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">Nawabi Kacchi</span>
+          <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="book-a-table.html" class="btn-book">Book a Table</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero page-hero--short">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1800&q=80');"></div>
+    <div class="page-hero-content">
+      <p class="section-tag">We'd Love to Hear From You</p>
+      <h1>Get in <em>Touch</em></h1>
+      <p>A question, a reservation, or just a kind word — our door is always open.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO CARDS -->
+  <section class="contact-cards-section">
+    <div class="container">
+      <div class="contact-cards">
+        <div class="contact-info-card reveal">
+          <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Visit Us</h3>
+          <p>45 Brick Lane<br />London, E1 6PU<br />United Kingdom</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="ci-link">Get Directions <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="contact-info-card reveal">
+          <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>Call Us</h3>
+          <p>+44 20 7946 0123</p>
+          <p class="ci-note">Mon–Sat: 11:00 – 22:00<br />Sunday: 12:00 – 21:00</p>
+          <a href="tel:+442079460123" class="ci-link">Call Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="contact-info-card reveal">
+          <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email Us</h3>
+          <p>hello@nawabikacchi.co.uk</p>
+          <p class="ci-note">We reply within 24 hours</p>
+          <a href="mailto:hello@nawabikacchi.co.uk" class="ci-link">Send Email <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="contact-info-card reveal">
+          <div class="ci-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>Opening Hours</h3>
+          <ul class="ci-hours">
+            <li><span>Mon – Thu</span><span>12:00 – 22:00</span></li>
+            <li><span>Fri – Sat</span><span>12:00 – 23:00</span></li>
+            <li><span>Sunday</span><span>13:00 – 21:00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM + MAP -->
+  <section class="contact-main section-padding">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal">
+          <p class="section-tag">Send a Message</p>
+          <h2 class="section-title">We're Always<br />Happy to Help</h2>
+          <p class="form-desc">Whether it's a reservation query, dietary requirement, event booking, or just a hello — drop us a message and we'll get back to you promptly.</p>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g. Ahmed" required />
+                <span class="form-error" id="firstNameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g. Khan" required />
+                <span class="form-error" id="lastNameErr"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                <span class="form-error" id="emailErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+44 7700 900000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject…</option>
+                <option value="reservation">Table Reservation</option>
+                <option value="event">Private Event / Catering</option>
+                <option value="feedback">Feedback</option>
+                <option value="allergy">Allergy / Dietary Query</option>
+                <option value="media">Press &amp; Media</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error" id="subjectErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help…" required></textarea>
+              <span class="form-error" id="messageErr"></span>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent">I agree to Nawabi Kacchi storing my details to respond to this enquiry.</label>
+            </div>
+            <button type="submit" class="btn-primary form-submit">
+              <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loading" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending…</span>
+            </button>
+          </form>
+
+          <!-- Success message (hidden by default) -->
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. We'll get back to you within 24 hours. In the meantime, why not explore our <a href="menu.html">menu</a>?</p>
+          </div>
+        </div>
+
+        <!-- Map + extras -->
+        <div class="contact-right reveal">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0897521547607!2d-0.07199532395775082!3d51.52067891028534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caf8fdabf27%3A0x4de3aab4a5b7a7ea!2sBrick%20Lane%2C%20London!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk"
+              width="100%"
+              height="340"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Nawabi Kacchi location"
+            ></iframe>
+          </div>
+
+          <div class="social-contact-card">
+            <h3>Follow Our Journey</h3>
+            <p>Stay up to date with new dishes, offers, and behind-the-scenes kitchen stories.</p>
+            <div class="social-links-contact">
+              <a href="#" class="social-link-item">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="#" class="social-link-item">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="#" class="social-link-item">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span>X / Twitter</span>
+              </a>
+              <a href="#" class="social-link-item">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>TikTok</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="book-cta-mini">
+            <i class="fa-solid fa-calendar-check"></i>
+            <div>
+              <h3>Ready to Dine?</h3>
+              <p>Skip the wait — reserve your table online in 60 seconds.</p>
+            </div>
+            <a href="book-a-table.html" class="btn-primary">Book Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section-padding">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;">
+        <p class="section-tag">Quick Answers</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Do you accept walk-in guests?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes! We welcome walk-in guests, though we strongly recommend booking a table in advance — especially on weekends and during special events — as we fill up quickly.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Is all your food halal?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. 100% of our meat and produce is certified halal. We take this very seriously and our supply chain is fully audited. You can dine with complete confidence.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Can you cater for dietary requirements?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>We cater for a wide range of dietary needs including vegetarian and vegan options. Please inform us of any allergies or requirements when booking or before ordering. Our team will do everything to accommodate you.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Do you host private events and parties?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes! We have a private dining room available for exclusive events — from weddings and birthday dinners to corporate lunches and Eid celebrations. Contact us with your requirements and we'll create a bespoke experience for you.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Where can I park near the restaurant?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>We are located on Brick Lane, London E1. The nearest public car parks are on Whitechapel Road and Commercial Street. We are also a short walk from Aldgate East and Whitechapel Underground stations.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Do you offer takeaway or delivery?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes, we offer takeaway collection and delivery through our partners Deliveroo and Uber Eats. However, for the full Nawabi experience, we always recommend dining in with us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+            <div class="logo-text">
+              <span class="logo-main">Nawabi Kacchi</span>
+              <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+            </div>
+          </a>
+          <p>Bringing the royal flavours of Bangladesh to the heart of the United Kingdom since 2012.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book-a-table.html">Book a Table</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="hours-list">
+            <li><span>Mon – Thu</span><span>12:00 – 22:00</span></li>
+            <li><span>Fri – Sat</span><span>12:00 – 23:00</span></li>
+            <li><span>Sunday</span><span>13:00 – 21:00</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> 45 Brick Lane, London, E1 6PU</li>
+            <li><i class="fa-solid fa-phone"></i> +44 20 7946 0123</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@nawabikacchi.co.uk</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Nawabi Kacchi. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart" style="color:#c9a227"></i> for Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
