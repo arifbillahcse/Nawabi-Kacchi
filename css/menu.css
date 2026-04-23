@@ -1,0 +1,303 @@
+/* ============================================================
+   NAWABI KACCHI — Menu Page
+   ============================================================ */
+
+/* Reuse page-hero styles from blog.css but we redeclare here
+   so menu.css is self-contained when blog.css isn't loaded */
+.page-hero {
+  position: relative;
+  padding: 180px 0 100px;
+  overflow: hidden;
+  background: var(--bg-dark);
+}
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+}
+.menu-hero-bg {
+  background:
+    radial-gradient(ellipse at 60% 40%, rgba(139,26,26,0.25) 0%, transparent 60%),
+    url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1800&q=80') center/cover;
+}
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.96) 100%);
+}
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.page-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--white);
+  margin: 14px 0 18px;
+  line-height: 1.15;
+}
+.page-hero-title em { color: var(--gold); font-style: italic; }
+.page-hero-sub {
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 28px;
+  font-size: 1.02rem;
+}
+.breadcrumbs {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.82rem; color: var(--text-muted);
+  background: var(--bg-card); border: 1px solid var(--border);
+  padding: 8px 18px; border-radius: 50px;
+}
+.breadcrumbs a { color: var(--gold); }
+.breadcrumbs a:hover { color: var(--gold-light); }
+.breadcrumbs i { font-size: 0.65rem; }
+
+/* ============================================================
+   MENU TABS
+   ============================================================ */
+.menu-tabs-section {
+  background: var(--bg-dark);
+  padding: 30px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+}
+
+.menu-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--trans);
+}
+.menu-tab i { font-size: 0.95rem; }
+.menu-tab:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+.menu-tab.active {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: #0d0d0d;
+  border-color: transparent;
+  font-weight: 600;
+}
+
+/* ============================================================
+   MENU PANELS
+   ============================================================ */
+.menu-content { background: var(--bg-dark); }
+
+.menu-panel {
+  display: none;
+  animation: fadePanel 0.5s ease;
+}
+.menu-panel.active { display: block; }
+
+@keyframes fadePanel {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.menu-grid--compact {
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+/* ============================================================
+   MENU ITEM CARD (with image)
+   ============================================================ */
+.menu-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--trans);
+  display: flex;
+  flex-direction: column;
+}
+.menu-item:hover {
+  transform: translateY(-8px);
+  border-color: rgba(201,162,39,0.4);
+  box-shadow: var(--shadow);
+}
+
+.menu-item-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.6s ease;
+}
+.menu-item:hover .menu-item-img { transform: scale(1.05); }
+
+.menu-badge {
+  position: absolute;
+  top: 14px; left: 14px;
+  background: var(--gold);
+  color: #0d0d0d;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.menu-item-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.menu-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.menu-item-head h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.menu-price {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--gold);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.menu-item-body p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.menu-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.menu-item-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+}
+.menu-item-tags i { color: var(--gold); font-size: 0.78rem; }
+
+/* ============================================================
+   MENU ITEM ROW (for breads & drinks — compact list)
+   ============================================================ */
+.menu-item-row {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  transition: var(--trans);
+}
+.menu-item-row:hover {
+  border-color: rgba(201,162,39,0.4);
+  transform: translateX(4px);
+}
+.menu-item-row h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.menu-item-row p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+.menu-item-row .menu-price {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  border-left: 1px dashed var(--border);
+}
+
+/* ============================================================
+   DISH IMAGES
+   ============================================================ */
+.menu-img--kacchi          { background-image: url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=700&q=80'); }
+.menu-img--tehari          { background-image: url('https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=700&q=80'); }
+.menu-img--chicken-biryani { background-image: url('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=700&q=80'); }
+.menu-img--morog           { background-image: url('https://images.unsplash.com/photo-1631292784640-2b24be784d5d?w=700&q=80'); }
+.menu-img--ilish           { background-image: url('https://images.unsplash.com/photo-1626777553635-f3dd2e53b3c7?w=700&q=80'); }
+.menu-img--veg-pulao       { background-image: url('https://images.unsplash.com/photo-1604908554049-a8d9a5c8cef4?w=700&q=80'); }
+.menu-img--rezala          { background-image: url('https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=700&q=80'); }
+.menu-img--chicken-roast   { background-image: url('https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=700&q=80'); }
+.menu-img--beef-bhuna      { background-image: url('https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=700&q=80'); }
+.menu-img--haleem          { background-image: url('https://images.unsplash.com/photo-1547592180-85f173990554?w=700&q=80'); }
+.menu-img--fish-curry      { background-image: url('https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=700&q=80'); }
+.menu-img--dal             { background-image: url('https://images.unsplash.com/photo-1626776877660-dc0739651d43?w=700&q=80'); }
+.menu-img--fuchka          { background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700&q=80'); }
+.menu-img--chotpoti        { background-image: url('https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=700&q=80'); }
+.menu-img--jhalmuri        { background-image: url('https://images.unsplash.com/photo-1625938145312-c96da3d16aa0?w=700&q=80'); }
+.menu-img--kebab           { background-image: url('https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=700&q=80'); }
+.menu-img--samosa          { background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700&q=80'); }
+.menu-img--chicken-tikka   { background-image: url('https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=700&q=80'); }
+.menu-img--firni           { background-image: url('https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=700&q=80'); }
+.menu-img--roshogolla      { background-image: url('https://images.unsplash.com/photo-1605478537079-06c8e38b59be?w=700&q=80'); }
+.menu-img--mishti-doi      { background-image: url('https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=700&q=80'); }
+.menu-img--zarda           { background-image: url('https://images.unsplash.com/photo-1605478537079-06c8e38b59be?w=700&q=80'); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .page-hero { padding: 140px 0 70px; }
+  .menu-tabs { gap: 6px; }
+  .menu-tab { padding: 10px 16px; font-size: 0.8rem; }
+  .menu-item-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .menu-item-row .menu-price {
+    padding-left: 0;
+    border-left: none;
+  }
+}

@@ -121,25 +121,27 @@ if (counterEls.length) {
   });
 })();
 
-/* ---------- Smooth active nav on scroll ---------- */
-const sections = document.querySelectorAll('section[id]');
-const navLinkEls = document.querySelectorAll('.nav-link');
+/* ---------- Smooth active nav on scroll (home page only) ---------- */
+if (document.querySelector('.hero')) {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinkEls = document.querySelectorAll('.nav-link');
 
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinkEls.forEach(link => {
-        link.classList.toggle(
-          'active',
-          link.getAttribute('href') === `#${entry.target.id}` ||
-          (entry.target.id === 'home' && link.getAttribute('href') === 'index.html')
-        );
-      });
-    }
-  });
-}, { threshold: 0.4 });
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinkEls.forEach(link => {
+          link.classList.toggle(
+            'active',
+            link.getAttribute('href') === `#${entry.target.id}` ||
+            (entry.target.id === 'home' && link.getAttribute('href') === 'index.html')
+          );
+        });
+      }
+    });
+  }, { threshold: 0.4 });
 
-sections.forEach(s => sectionObserver.observe(s));
+  sections.forEach(s => sectionObserver.observe(s));
+}
 
 /* ---------- Parallax on hero bg (subtle) ---------- */
 const heroBg = document.querySelector('.hero-bg');

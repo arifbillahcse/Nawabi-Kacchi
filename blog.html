@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Nawabi Kacchi – Stories from Our Royal Kitchen</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">Nawabi Kacchi</span>
+          <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="book-a-table.html" class="btn-book">Book a Table</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <p class="section-tag">The Nawabi Journal</p>
+      <h1 class="page-hero-title">Stories, Spice &amp; <em>Soul</em></h1>
+      <p class="page-hero-sub">
+        Dive into the heritage of Bangladeshi cuisine — recipes, secrets, and tales from
+        the royal kitchens of Old Dhaka, served straight to your table in the UK.
+      </p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Blog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED POST ===================== -->
+  <section class="featured-post section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Featured Story</p>
+        <h2 class="section-title">Straight from the Chef's Table</h2>
+      </div>
+
+      <article class="featured-card reveal">
+        <div class="featured-img"></div>
+        <div class="featured-body">
+          <div class="post-meta">
+            <span class="post-cat">Heritage</span>
+            <span><i class="fa-regular fa-calendar"></i> 18 April 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 7 min read</span>
+          </div>
+          <h3 class="featured-title">
+            The Secret Behind Authentic Kacchi Biryani — A 200-Year-Old Recipe
+          </h3>
+          <p>
+            Ever wondered why our Kacchi Biryani tastes like nothing else in the UK? It's
+            not magic — it's mastery. Our Head Chef, Ustad Rahim, shares the centuries-old
+            Nawabi technique of layering raw marinated mutton with fragrant basmati,
+            sealed with dough and slow-cooked over coal for four hours. One bite, and
+            you're dining in 19th-century Dhaka.
+          </p>
+          <div class="post-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <strong>Ustad Rahim Ali</strong>
+              <span>Head Chef, 30+ years of Nawabi cuisine</span>
+            </div>
+          </div>
+          <a href="#" class="btn-primary">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== BLOG CATEGORIES ===================== -->
+  <section class="blog-categories">
+    <div class="container">
+      <div class="cat-pills reveal">
+        <button class="cat-pill active" data-filter="all">All Stories</button>
+        <button class="cat-pill" data-filter="recipes">Recipes</button>
+        <button class="cat-pill" data-filter="heritage">Heritage</button>
+        <button class="cat-pill" data-filter="behind">Behind the Scenes</button>
+        <button class="cat-pill" data-filter="tips">Dining Tips</button>
+        <button class="cat-pill" data-filter="events">Events</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOG GRID ===================== -->
+  <section class="blog-grid-section section-padding">
+    <div class="container">
+      <div class="blog-grid">
+
+        <article class="blog-card reveal" data-category="recipes">
+          <div class="blog-img blog-img--1"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Recipes</span>
+              <span><i class="fa-regular fa-clock"></i> 5 min</span>
+            </div>
+            <h3>5 Bangladeshi Dishes You Must Try in the UK</h3>
+            <p>From tangy Fuchka to buttery Beef Tehari — a guided tour through the flavours that define our nation.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="behind">
+          <div class="blog-img blog-img--2"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Behind the Scenes</span>
+              <span><i class="fa-regular fa-clock"></i> 6 min</span>
+            </div>
+            <h3>How We Source Our Spices from Dhaka</h3>
+            <p>Every cardamom, clove, and cinnamon stick in our kitchen has a passport. Follow the journey from market to masala.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="heritage">
+          <div class="blog-img blog-img--3"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Heritage</span>
+              <span><i class="fa-regular fa-clock"></i> 8 min</span>
+            </div>
+            <h3>The Art of Slow-Cooking: Our Kitchen Philosophy</h3>
+            <p>In a world obsessed with speed, we still cook mutton for six hours. Here's why patience is the secret spice.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="events">
+          <div class="blog-img blog-img--4"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Events</span>
+              <span><i class="fa-regular fa-clock"></i> 4 min</span>
+            </div>
+            <h3>Celebrating Pohela Boishakh at Nawabi Kacchi</h3>
+            <p>A night of Panta Ilish, live dhol music, and Bengali New Year joy — come dressed in red &amp; white.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="heritage">
+          <div class="blog-img blog-img--5"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Heritage</span>
+              <span><i class="fa-regular fa-clock"></i> 5 min</span>
+            </div>
+            <h3>Why Clay Pot Cooking Matters</h3>
+            <p>Our handmade matka (clay pots) breathe while they cook, giving every bite an earthy soul you can taste.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="behind">
+          <div class="blog-img blog-img--6"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Behind the Scenes</span>
+              <span><i class="fa-regular fa-clock"></i> 7 min</span>
+            </div>
+            <h3>Meet Our Head Chef: A Journey from Old Dhaka</h3>
+            <p>From a tea stall in Puran Dhaka to London's finest Bangladeshi kitchen — Chef Rahim's story will move you.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="tips">
+          <div class="blog-img blog-img--7"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Dining Tips</span>
+              <span><i class="fa-regular fa-clock"></i> 4 min</span>
+            </div>
+            <h3>Hosting the Perfect Bangladeshi Dinner Party</h3>
+            <p>Menu ideas, portion sizes, and the one drink you must serve with Kacchi — a host's survival guide.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="recipes">
+          <div class="blog-img blog-img--8"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Recipes</span>
+              <span><i class="fa-regular fa-clock"></i> 6 min</span>
+            </div>
+            <h3>Vegetarian Options That Will Surprise You</h3>
+            <p>Shukto, Dal Makhani, Begun Bhaja — proof that Bangladeshi vegetarian food is every bit as royal as our meats.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="tips">
+          <div class="blog-img blog-img--9"></div>
+          <div class="blog-body">
+            <div class="post-meta">
+              <span class="post-cat">Dining Tips</span>
+              <span><i class="fa-regular fa-clock"></i> 5 min</span>
+            </div>
+            <h3>Pairing Borhani &amp; Biryani Like a Local</h3>
+            <p>The yogurt drink that cuts through spice and cools the soul — our guide to getting the ratio just right.</p>
+            <a href="#" class="blog-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="pagination reveal">
+        <button class="page-btn" disabled><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter section-padding reveal">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="cta-glow"></div>
+        <p class="section-tag">Join the Royal Table</p>
+        <h2>Get Exclusive Recipes &amp; Event Invites</h2>
+        <p>Subscribe to our monthly newsletter — plus enjoy a <strong>10% off voucher</strong> on your first booking.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the Nawabi family!'); this.reset();">
+          <input type="email" placeholder="Enter your email..." required />
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+        <small>We respect your inbox. Unsubscribe anytime.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+            <div class="logo-text">
+              <span class="logo-main">Nawabi Kacchi</span>
+              <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+            </div>
+          </a>
+          <p>Bringing the royal flavours of Bangladesh to the heart of the United Kingdom since 2012.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book-a-table.html">Book a Table</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="hours-list">
+            <li><span>Mon &ndash; Thu</span><span>12:00 &ndash; 22:00</span></li>
+            <li><span>Fri &ndash; Sat</span><span>12:00 &ndash; 23:00</span></li>
+            <li><span>Sunday</span><span>13:00 &ndash; 21:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> 45 Brick Lane, London, E1 6PU</li>
+            <li><i class="fa-solid fa-phone"></i> +44 20 7946 0123</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@nawabikacchi.co.uk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nawabi Kacchi. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart" style="color:#c9a227"></i> for Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

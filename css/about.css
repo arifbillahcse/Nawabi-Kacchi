@@ -1,0 +1,379 @@
+/* ============================================================
+   NAWABI KACCHI — About Us Page
+   ============================================================ */
+
+/* ---------- Page Hero ---------- */
+.page-hero {
+  position: relative;
+  padding: 180px 0 100px;
+  overflow: hidden;
+  background: var(--bg-dark);
+}
+.page-hero-bg { position: absolute; inset: 0; opacity: 0.4; }
+.about-hero-bg {
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(139,26,26,0.2) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 70%, rgba(201,162,39,0.15) 0%, transparent 55%),
+    url('https://images.unsplash.com/photo-1559847844-5315695dadae?w=1800&q=80') center/cover;
+}
+.page-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(13,13,13,0.85) 0%, rgba(13,13,13,0.96) 100%);
+}
+.page-hero-content { position: relative; z-index: 2; text-align: center; }
+.page-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--white);
+  margin: 14px 0 18px;
+  line-height: 1.15;
+}
+.page-hero-title em { color: var(--gold); font-style: italic; }
+.page-hero-sub {
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 28px;
+  font-size: 1.02rem;
+}
+.breadcrumbs {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.82rem; color: var(--text-muted);
+  background: var(--bg-card); border: 1px solid var(--border);
+  padding: 8px 18px; border-radius: 50px;
+}
+.breadcrumbs a { color: var(--gold); }
+.breadcrumbs a:hover { color: var(--gold-light); }
+.breadcrumbs i { font-size: 0.65rem; }
+
+/* ============================================================
+   OUR STORY (reuses home about-snippet layout)
+   ============================================================ */
+.our-story { background: var(--bg-dark); }
+.about-text em { color: var(--gold); font-style: italic; font-weight: 600; }
+
+/* ============================================================
+   STATS STRIP
+   ============================================================ */
+.about-stats {
+  background: var(--bg-card);
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+.stat-item {
+  text-align: center;
+  padding: 20px;
+}
+.stat-item i {
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: block;
+}
+.stat-item .stat-num {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.stat-item .plus {
+  font-size: 1.8rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+.stat-item p {
+  margin-top: 6px;
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   VALUES
+   ============================================================ */
+.values { background: var(--bg-dark); }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.value-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px 30px;
+  transition: var(--trans);
+  overflow: hidden;
+}
+.value-card:hover {
+  border-color: rgba(201,162,39,0.4);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+.value-num {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: rgba(201,162,39,0.08);
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  line-height: 1;
+  transition: var(--trans);
+}
+.value-card:hover .value-num { color: rgba(201,162,39,0.2); }
+
+.value-card i {
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+  display: block;
+}
+.value-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.value-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+.timeline-section { background: var(--bg-card); }
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+.timeline-item:nth-child(odd)  { margin-left: 0;   text-align: right; }
+.timeline-item:nth-child(even) { margin-left: 50%; text-align: left;  }
+
+/* Note: nth-child includes timeline-line. Adjust so odds are actually left side */
+.timeline-item:nth-of-type(odd)   { margin-left: 0;   text-align: right; padding-right: 60px; padding-left: 0; }
+.timeline-item:nth-of-type(even)  { margin-left: 50%; text-align: left;  padding-left: 60px;  padding-right: 0; }
+
+.timeline-dot {
+  position: absolute;
+  top: 30px;
+  width: 16px; height: 16px;
+  background: var(--gold);
+  border: 3px solid var(--bg-card);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--gold);
+  z-index: 2;
+}
+.timeline-item:nth-of-type(odd)  .timeline-dot { right: -8px; }
+.timeline-item:nth-of-type(even) .timeline-dot { left: -8px;  }
+
+.timeline-content {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  transition: var(--trans);
+}
+.timeline-item:hover .timeline-content {
+  border-color: rgba(201,162,39,0.4);
+  transform: translateY(-4px);
+}
+
+.timeline-year {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.timeline-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   TEAM
+   ============================================================ */
+.team-section { background: var(--bg-dark); }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.team-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--trans);
+}
+.team-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(201,162,39,0.4);
+  box-shadow: var(--shadow);
+}
+
+.team-photo {
+  height: 280px;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  transition: transform 0.6s ease;
+}
+.team-card:hover .team-photo { transform: scale(1.04); }
+
+.team-photo--1 { background-image: url('https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80'); }
+.team-photo--2 { background-image: url('https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?w=600&q=80'); }
+.team-photo--3 { background-image: url('https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=600&q=80'); }
+.team-photo--4 { background-image: url('https://images.unsplash.com/photo-1622030411594-c8d64ad0efec?w=600&q=80'); }
+
+.team-info {
+  padding: 24px;
+  text-align: center;
+}
+.team-info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.team-role {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.team-info p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-socials a {
+  width: 34px; height: 34px;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  transition: var(--trans);
+}
+.team-socials a:hover {
+  background: var(--gold);
+  color: #0d0d0d;
+  border-color: var(--gold);
+}
+
+/* ============================================================
+   AWARDS
+   ============================================================ */
+.awards-section { background: var(--bg-card); }
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.award {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  transition: var(--trans);
+}
+.award:hover {
+  border-color: rgba(201,162,39,0.4);
+  transform: translateY(-3px);
+}
+.award i {
+  font-size: 1.4rem;
+  color: var(--gold);
+}
+.award span {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .about-grid { grid-template-columns: 1fr; gap: 50px; }
+  .about-visual { height: 380px; }
+}
+
+@media (max-width: 768px) {
+  .page-hero { padding: 140px 0 70px; }
+
+  .about-visual { display: none; }
+
+  .timeline-line { left: 18px; }
+  .timeline-item,
+  .timeline-item:nth-of-type(odd),
+  .timeline-item:nth-of-type(even) {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px 0 20px 50px;
+    text-align: left;
+  }
+  .timeline-item:nth-of-type(odd) .timeline-dot,
+  .timeline-item:nth-of-type(even) .timeline-dot {
+    left: 10px;
+    right: auto;
+  }
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Nawabi Kacchi – We'd Love to Hear from You</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">Nawabi Kacchi</span>
+          <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="book-a-table.html" class="btn-book">Book a Table</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg contact-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <p class="section-tag">Say Hello</p>
+      <h1 class="page-hero-title">We'd Love to <em>Hear</em> from You</h1>
+      <p class="page-hero-sub">
+        Questions, compliments, catering enquiries, or just want to chat about biryani?
+        Drop us a line — we reply within 24 hours, usually faster.
+      </p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INFO CARDS ===================== -->
+  <section class="info-cards-section section-padding">
+    <div class="container">
+      <div class="info-cards">
+
+        <div class="info-card reveal">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Visit Us</h3>
+          <p>45 Brick Lane<br />London, E1 6PU<br />United Kingdom</p>
+          <a href="https://maps.google.com" target="_blank" class="info-link">
+            Get Directions <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>Call Us</h3>
+          <p>+44 20 7946 0123<br />+44 7700 900123 (Mobile)</p>
+          <a href="tel:+442079460123" class="info-link">
+            Call Now <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email Us</h3>
+          <p>hello@nawabikacchi.co.uk<br />catering@nawabikacchi.co.uk</p>
+          <a href="mailto:hello@nawabikacchi.co.uk" class="info-link">
+            Send Email <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>Opening Hours</h3>
+          <p>Mon&ndash;Thu: 12:00 &ndash; 22:00<br />Fri&ndash;Sat: 12:00 &ndash; 23:00<br />Sunday: 13:00 &ndash; 21:00</p>
+          <a href="book-a-table.html" class="info-link">
+            Book a Table <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FORM + MAP ===================== -->
+  <section class="form-map-section section-padding">
+    <div class="container">
+      <div class="form-map-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap reveal">
+          <p class="section-tag">Send a Message</p>
+          <h2 class="section-title">Let's Start a Conversation</h2>
+          <p class="section-sub">We'll get back to you within 24 hours. For urgent bookings, please call.</p>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="you@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="+44 ..." />
+              </div>
+              <div class="form-field">
+                <label>Subject</label>
+                <select name="subject" required>
+                  <option value="">Choose a topic...</option>
+                  <option>General Enquiry</option>
+                  <option>Reservation Question</option>
+                  <option>Private Event / Catering</option>
+                  <option>Feedback / Compliment</option>
+                  <option>Press / Media</option>
+                  <option>Careers</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label>Your Message</label>
+              <textarea name="message" rows="6" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="subscribe" name="subscribe" />
+              <label for="subscribe">Send me monthly offers and event invites</label>
+            </div>
+
+            <button type="submit" class="btn-primary btn-lg">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <p class="form-success" id="formSuccess">
+              <i class="fa-solid fa-check-circle"></i>
+              Thank you! Your message has been received — we'll reply within 24 hours.
+            </p>
+          </form>
+        </div>
+
+        <!-- MAP + ASIDE -->
+        <aside class="contact-aside reveal">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9933.8!2d-0.0716!3d51.5195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBrick%20Lane%2C%20London!5e0!3m2!1sen!2suk!4v1"
+              width="100%" height="340"
+              style="border:0; border-radius: 16px;"
+              allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Nawabi Kacchi Location">
+            </iframe>
+          </div>
+
+          <div class="social-block">
+            <h4>Follow Us</h4>
+            <p>Daily recipes, behind-the-scenes moments, and weekend offers.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="quick-callout">
+            <i class="fa-solid fa-utensils"></i>
+            <div>
+              <h4>Planning an Event?</h4>
+              <p>From weddings to corporate dinners — we cater up to 300 guests with full royal service.</p>
+              <a href="mailto:catering@nawabikacchi.co.uk" class="info-link">
+                Catering Enquiries <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq-section section-padding">
+    <div class="container">
+      <div class="section-header reveal center">
+        <p class="section-tag">FAQs</p>
+        <h2 class="section-title">Questions, Answered</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            <span>Do you accept walk-ins?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely! But weekends fill up fast. We strongly recommend booking ahead to guarantee your spot — especially for groups.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            <span>Is all your food halal?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes — 100%. Every meat we serve is certified halal, sourced from trusted UK-based halal butchers. No exceptions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            <span>Do you offer vegetarian and vegan options?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Plenty! From Veg Pulao and Dal Makhani to Begun Bhaja and full vegetarian thalis. Our menu marks every vegetarian dish clearly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            <span>Can I book the whole restaurant for an event?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes — we host private dinners, birthdays, engagements, and corporate events for up to 120 guests. Email catering@nawabikacchi.co.uk for a quote.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            <span>Do you deliver?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes, within a 5-mile radius directly, and UK-wide via Deliveroo, Uber Eats, and Just Eat.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            <span>Is the restaurant family-friendly?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Very much so. We have a kids' menu, high chairs, and a relaxed atmosphere — families are the heart of our restaurant.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+            <div class="logo-text">
+              <span class="logo-main">Nawabi Kacchi</span>
+              <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+            </div>
+          </a>
+          <p>Bringing the royal flavours of Bangladesh to the heart of the United Kingdom since 2012.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book-a-table.html">Book a Table</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="hours-list">
+            <li><span>Mon &ndash; Thu</span><span>12:00 &ndash; 22:00</span></li>
+            <li><span>Fri &ndash; Sat</span><span>12:00 &ndash; 23:00</span></li>
+            <li><span>Sunday</span><span>13:00 &ndash; 21:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> 45 Brick Lane, London, E1 6PU</li>
+            <li><i class="fa-solid fa-phone"></i> +44 20 7946 0123</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@nawabikacchi.co.uk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nawabi Kacchi. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart" style="color:#c9a227"></i> for Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Nawabi Kacchi – Royal Bangladeshi Cuisine</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">Nawabi Kacchi</span>
+          <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="book-a-table.html" class="btn-book">Book a Table</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg menu-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <p class="section-tag">A Royal Selection</p>
+      <h1 class="page-hero-title">Our <em>Menu</em></h1>
+      <p class="page-hero-sub">
+        Every dish is a story. Every bite, a memory. Explore our carefully curated menu of
+        authentic Bangladeshi classics — crafted with heritage, served with pride.
+      </p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Menu</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU TABS ===================== -->
+  <section class="menu-tabs-section">
+    <div class="container">
+      <div class="menu-tabs reveal" id="menuTabs">
+        <button class="menu-tab active" data-tab="biryani">
+          <i class="fa-solid fa-bowl-rice"></i>
+          <span>Biryani &amp; Tehari</span>
+        </button>
+        <button class="menu-tab" data-tab="curries">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span>Main Curries</span>
+        </button>
+        <button class="menu-tab" data-tab="starters">
+          <i class="fa-solid fa-pepper-hot"></i>
+          <span>Starters</span>
+        </button>
+        <button class="menu-tab" data-tab="breads">
+          <i class="fa-solid fa-wheat-awn"></i>
+          <span>Breads &amp; Rice</span>
+        </button>
+        <button class="menu-tab" data-tab="desserts">
+          <i class="fa-solid fa-ice-cream"></i>
+          <span>Desserts</span>
+        </button>
+        <button class="menu-tab" data-tab="beverages">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span>Beverages</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU CONTENT ===================== -->
+  <section class="menu-content section-padding">
+    <div class="container">
+
+      <!-- BIRYANI & TEHARI -->
+      <div class="menu-panel active" id="panel-biryani">
+        <div class="menu-grid">
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--kacchi">
+              <span class="menu-badge">Chef's Pick</span>
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Kacchi Biryani</h3>
+                <span class="menu-price">&pound;14.99</span>
+              </div>
+              <p>Marinated mutton layered with fragrant basmati rice, slow-cooked over coal in a sealed pot. The crown jewel of Bangladeshi cuisine.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+                <span><i class="fa-solid fa-certificate"></i> Signature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--tehari">
+              <span class="menu-badge">Popular</span>
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Beef Tehari</h3>
+                <span class="menu-price">&pound;12.99</span>
+              </div>
+              <p>Tender beef simmered with aromatic rice and Old Dhaka spices — a soul-warming street classic, elevated.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Mild</span>
+                <span><i class="fa-solid fa-heart"></i> Comfort</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--chicken-biryani"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Chicken Biryani</h3>
+                <span class="menu-price">&pound;11.99</span>
+              </div>
+              <p>Tender chicken pieces marinated overnight, layered with saffron-scented basmati and served with raita.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--morog"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Morog Pulao</h3>
+                <span class="menu-price">&pound;13.49</span>
+              </div>
+              <p>A Dhaka wedding staple — whole chicken legs cooked with polao rice, ghee, and royal spices.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Mild</span>
+                <span><i class="fa-solid fa-crown"></i> Royal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--ilish"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Ilish Pulao</h3>
+                <span class="menu-price">&pound;16.99</span>
+              </div>
+              <p>Our national fish paired with fragrant pulao rice — a luxurious ode to the rivers of Bangladesh.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+                <span><i class="fa-solid fa-fish"></i> Seasonal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--veg-pulao"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Vegetable Pulao</h3>
+                <span class="menu-price">&pound;9.99</span>
+              </div>
+              <p>Aromatic rice cooked with seasonal vegetables, cashews, and raisins — light, festive, and deeply satisfying.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-leaf"></i> Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CURRIES -->
+      <div class="menu-panel" id="panel-curries">
+        <div class="menu-grid">
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--rezala">
+              <span class="menu-badge">Royal</span>
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Mutton Rezala</h3>
+                <span class="menu-price">&pound;15.99</span>
+              </div>
+              <p>A Mughal-inspired creamy white curry with mutton, yogurt, cashew paste, and delicate royal spices.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Mild</span>
+                <span><i class="fa-solid fa-crown"></i> Heritage</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--chicken-roast"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Chicken Roast</h3>
+                <span class="menu-price">&pound;10.99</span>
+              </div>
+              <p>Bangladeshi-style roast — chicken leg slow-cooked in a thick, spiced yogurt-tomato gravy.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--beef-bhuna"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Beef Bhuna</h3>
+                <span class="menu-price">&pound;13.49</span>
+              </div>
+              <p>Slow-fried tender beef coated in a rich, caramelised onion and spice masala.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Hot</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--haleem"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Shahi Haleem</h3>
+                <span class="menu-price">&pound;11.99</span>
+              </div>
+              <p>A rich, slow-cooked blend of lentils, wheat, and spiced meat — hearty, royal, unforgettable.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--fish-curry"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Shorshe Ilish</h3>
+                <span class="menu-price">&pound;14.49</span>
+              </div>
+              <p>Hilsa fish in a fiery mustard seed gravy — a Bengali classic straight from grandmother's kitchen.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Hot</span>
+                <span><i class="fa-solid fa-fish"></i> Fish</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--dal"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Dal Makhani</h3>
+                <span class="menu-price">&pound;7.99</span>
+              </div>
+              <p>Black lentils and kidney beans slow-simmered overnight with butter, cream, and aromatic spices.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-leaf"></i> Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- STARTERS -->
+      <div class="menu-panel" id="panel-starters">
+        <div class="menu-grid">
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--fuchka">
+              <span class="menu-badge">Street Fav</span>
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Fuchka</h3>
+                <span class="menu-price">&pound;5.99</span>
+              </div>
+              <p>Crispy hollow shells filled with spiced chickpeas, potato, tamarind water — Dhaka's most loved street snack.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+                <span><i class="fa-solid fa-leaf"></i> Veg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--chotpoti"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Chotpoti</h3>
+                <span class="menu-price">&pound;6.49</span>
+              </div>
+              <p>Tangy chickpea &amp; potato chaat topped with boiled egg, onion, coriander, and tamarind.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--jhalmuri"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Jhal Muri</h3>
+                <span class="menu-price">&pound;4.99</span>
+              </div>
+              <p>Puffed rice tossed with mustard oil, chilli, onion, coriander — a spicy Bengali tea-time classic.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Hot</span>
+                <span><i class="fa-solid fa-leaf"></i> Veg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--kebab"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Shami Kebab</h3>
+                <span class="menu-price">&pound;7.99</span>
+              </div>
+              <p>Minced mutton patties with ground lentils, fried golden and served with onion rings and mint chutney.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--samosa"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Singara (4 pcs)</h3>
+                <span class="menu-price">&pound;4.49</span>
+              </div>
+              <p>Triangular crisp pastry filled with spiced potato, peanuts, and peas — our tea-time hero.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-leaf"></i> Veg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--chicken-tikka"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Chicken Tikka</h3>
+                <span class="menu-price">&pound;8.99</span>
+              </div>
+              <p>Chargrilled chicken chunks marinated in yogurt, garlic, and royal spices. Smoky &amp; juicy.</p>
+              <div class="menu-item-tags">
+                <span><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+                <span><i class="fa-solid fa-fire"></i> Chargrilled</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BREADS & RICE -->
+      <div class="menu-panel" id="panel-breads">
+        <div class="menu-grid menu-grid--compact">
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Luchi (4 pcs)</h3>
+              <p>Deep-fried flaky flour puffs — perfect with curries.</p>
+            </div>
+            <span class="menu-price">&pound;3.49</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Paratha</h3>
+              <p>Layered, buttery flatbread pan-fried to golden perfection.</p>
+            </div>
+            <span class="menu-price">&pound;2.99</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Naan</h3>
+              <p>Soft leavened flatbread baked in the tandoor.</p>
+            </div>
+            <span class="menu-price">&pound;2.49</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Garlic Naan</h3>
+              <p>Our signature naan, brushed with fresh garlic &amp; coriander butter.</p>
+            </div>
+            <span class="menu-price">&pound;3.29</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Plain Basmati Rice</h3>
+              <p>Fluffy long-grain basmati, lightly salted.</p>
+            </div>
+            <span class="menu-price">&pound;3.49</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Ghee Pulao</h3>
+              <p>Basmati rice cooked in pure ghee with whole spices.</p>
+            </div>
+            <span class="menu-price">&pound;4.99</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="menu-panel" id="panel-desserts">
+        <div class="menu-grid">
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--firni">
+              <span class="menu-badge">Must Try</span>
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Firni</h3>
+                <span class="menu-price">&pound;4.99</span>
+              </div>
+              <p>Slow-cooked ground rice pudding with cardamom, saffron, and pistachio — served chilled in clay pots.</p>
+              <div class="menu-item-tags"><span><i class="fa-solid fa-leaf"></i> Veg</span></div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--roshogolla"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Roshogolla (3 pcs)</h3>
+                <span class="menu-price">&pound;4.49</span>
+              </div>
+              <p>Spongy cottage cheese balls soaking in light rose-scented sugar syrup. Pure Bengali joy.</p>
+              <div class="menu-item-tags"><span><i class="fa-solid fa-leaf"></i> Veg</span></div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--mishti-doi"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Mishti Doi</h3>
+                <span class="menu-price">&pound;3.99</span>
+              </div>
+              <p>Traditional Bengali sweet yogurt, set in clay pots with caramelised jaggery.</p>
+              <div class="menu-item-tags"><span><i class="fa-solid fa-leaf"></i> Veg</span></div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-img menu-img--zarda"></div>
+            <div class="menu-item-body">
+              <div class="menu-item-head">
+                <h3>Zarda Pulao</h3>
+                <span class="menu-price">&pound;5.49</span>
+              </div>
+              <p>Saffron sweet rice with nuts, raisins, and ghee — the dessert of weddings and celebrations.</p>
+              <div class="menu-item-tags"><span><i class="fa-solid fa-crown"></i> Festive</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BEVERAGES -->
+      <div class="menu-panel" id="panel-beverages">
+        <div class="menu-grid menu-grid--compact">
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Borhani</h3>
+              <p>Our signature spiced yogurt drink — the perfect partner to biryani.</p>
+            </div>
+            <span class="menu-price">&pound;3.99</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Mango Lassi</h3>
+              <p>Creamy yogurt blended with Alphonso mango pulp.</p>
+            </div>
+            <span class="menu-price">&pound;3.49</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Masala Chai</h3>
+              <p>Strong black tea brewed with cardamom, ginger, cinnamon, and milk.</p>
+            </div>
+            <span class="menu-price">&pound;2.49</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Sugar Cane Juice</h3>
+              <p>Freshly pressed, lightly chilled, with lemon and ginger.</p>
+            </div>
+            <span class="menu-price">&pound;3.29</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Rooh Afza</h3>
+              <p>Classic rose-flavoured cooler with milk and ice.</p>
+            </div>
+            <span class="menu-price">&pound;2.99</span>
+          </div>
+
+          <div class="menu-item-row reveal">
+            <div>
+              <h3>Sparkling Water</h3>
+              <p>Chilled mineral water — still or sparkling.</p>
+            </div>
+            <span class="menu-price">&pound;1.99</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== BOOK CTA ===================== -->
+  <section class="book-cta section-padding reveal">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-glow"></div>
+        <p class="section-tag">Dine With Us</p>
+        <h2>Hungry Yet? Reserve Your Royal Seat</h2>
+        <p>Book your table today and let us treat you to the finest Bangladeshi hospitality.</p>
+        <a href="book-a-table.html" class="btn-primary btn-lg">Book a Table Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+            <div class="logo-text">
+              <span class="logo-main">Nawabi Kacchi</span>
+              <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+            </div>
+          </a>
+          <p>Bringing the royal flavours of Bangladesh to the heart of the United Kingdom since 2012.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book-a-table.html">Book a Table</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="hours-list">
+            <li><span>Mon &ndash; Thu</span><span>12:00 &ndash; 22:00</span></li>
+            <li><span>Fri &ndash; Sat</span><span>12:00 &ndash; 23:00</span></li>
+            <li><span>Sunday</span><span>13:00 &ndash; 21:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> 45 Brick Lane, London, E1 6PU</li>
+            <li><i class="fa-solid fa-phone"></i> +44 20 7946 0123</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@nawabikacchi.co.uk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nawabi Kacchi. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart" style="color:#c9a227"></i> for Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Table | Nawabi Kacchi – Reserve Your Royal Seat</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/book.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">Nawabi Kacchi</span>
+          <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="book-a-table.html" class="btn-book active">Book a Table</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg book-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <p class="section-tag">Reservations</p>
+      <h1 class="page-hero-title">Reserve Your <em>Royal</em> Seat</h1>
+      <p class="page-hero-sub">
+        An unforgettable evening of Bangladeshi heritage, spice and warmth awaits.
+        Book your table in under a minute.
+      </p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Book a Table</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BOOKING SECTION ===================== -->
+  <section class="booking-section section-padding">
+    <div class="container">
+      <div class="booking-grid">
+
+        <!-- BOOKING FORM -->
+        <div class="booking-form-wrap reveal">
+          <div class="booking-header">
+            <p class="section-tag">In 3 Simple Steps</p>
+            <h2 class="section-title">Let's Set Your Table</h2>
+            <p class="section-sub">Fill the details below and we'll confirm your booking within 15 minutes.</p>
+          </div>
+
+          <!-- STEP INDICATOR -->
+          <div class="step-indicator">
+            <div class="step active" data-step="1">
+              <div class="step-num">1</div>
+              <span>Date &amp; Time</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="2">
+              <div class="step-num">2</div>
+              <span>Your Details</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="3">
+              <div class="step-num">3</div>
+              <span>Confirm</span>
+            </div>
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+
+            <!-- STEP 1 -->
+            <div class="step-panel active" data-panel="1">
+              <div class="form-row">
+                <div class="form-field">
+                  <label><i class="fa-regular fa-calendar"></i> Date</label>
+                  <input type="date" name="date" required />
+                </div>
+                <div class="form-field">
+                  <label><i class="fa-regular fa-clock"></i> Time</label>
+                  <select name="time" required>
+                    <option value="">Select time...</option>
+                    <option>12:00 PM</option>
+                    <option>12:30 PM</option>
+                    <option>1:00 PM</option>
+                    <option>1:30 PM</option>
+                    <option>2:00 PM</option>
+                    <option>6:00 PM</option>
+                    <option>6:30 PM</option>
+                    <option>7:00 PM</option>
+                    <option>7:30 PM</option>
+                    <option>8:00 PM</option>
+                    <option>8:30 PM</option>
+                    <option>9:00 PM</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label><i class="fa-solid fa-users"></i> Number of Guests</label>
+                <div class="guest-selector">
+                  <button type="button" class="guest-btn" data-guests="1">1</button>
+                  <button type="button" class="guest-btn" data-guests="2">2</button>
+                  <button type="button" class="guest-btn active" data-guests="3">3</button>
+                  <button type="button" class="guest-btn" data-guests="4">4</button>
+                  <button type="button" class="guest-btn" data-guests="5">5</button>
+                  <button type="button" class="guest-btn" data-guests="6">6</button>
+                  <button type="button" class="guest-btn" data-guests="7">7</button>
+                  <button type="button" class="guest-btn" data-guests="8+">8+</button>
+                </div>
+                <input type="hidden" name="guests" id="guestsInput" value="3" />
+              </div>
+
+              <div class="form-field">
+                <label><i class="fa-solid fa-cake-candles"></i> Occasion (optional)</label>
+                <div class="occasion-chips">
+                  <button type="button" class="chip" data-val="none">None</button>
+                  <button type="button" class="chip" data-val="birthday">Birthday</button>
+                  <button type="button" class="chip" data-val="anniversary">Anniversary</button>
+                  <button type="button" class="chip" data-val="date">Date Night</button>
+                  <button type="button" class="chip" data-val="family">Family</button>
+                  <button type="button" class="chip" data-val="business">Business</button>
+                </div>
+                <input type="hidden" name="occasion" id="occasionInput" value="none" />
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn-primary next-step">
+                  Continue <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step-panel" data-panel="2">
+              <div class="form-row">
+                <div class="form-field">
+                  <label><i class="fa-solid fa-user"></i> Full Name</label>
+                  <input type="text" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-field">
+                  <label><i class="fa-solid fa-envelope"></i> Email</label>
+                  <input type="email" name="email" placeholder="you@email.com" required />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label><i class="fa-solid fa-phone"></i> Phone Number</label>
+                <input type="tel" name="phone" placeholder="+44 ..." required />
+              </div>
+
+              <div class="form-field">
+                <label><i class="fa-regular fa-note-sticky"></i> Special Requests (optional)</label>
+                <textarea name="notes" rows="4" placeholder="Allergies, dietary requirements, seating preferences, surprise arrangements..."></textarea>
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn-outline prev-step">
+                  <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+                <button type="button" class="btn-primary next-step">
+                  Review <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step-panel" data-panel="3">
+              <div class="review-box">
+                <h3>Review Your Reservation</h3>
+                <div class="review-grid">
+                  <div><span>Date</span><strong id="rDate">—</strong></div>
+                  <div><span>Time</span><strong id="rTime">—</strong></div>
+                  <div><span>Guests</span><strong id="rGuests">—</strong></div>
+                  <div><span>Occasion</span><strong id="rOccasion">—</strong></div>
+                  <div><span>Name</span><strong id="rName">—</strong></div>
+                  <div><span>Email</span><strong id="rEmail">—</strong></div>
+                  <div><span>Phone</span><strong id="rPhone">—</strong></div>
+                </div>
+                <div class="review-notes" id="rNotesWrap" style="display:none;">
+                  <span>Notes</span>
+                  <p id="rNotes">—</p>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" id="terms" required />
+                <label for="terms">I agree to the reservation terms and cancellation policy</label>
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn-outline prev-step">
+                  <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+                <button type="submit" class="btn-primary btn-lg">
+                  Confirm Reservation <i class="fa-solid fa-check"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- SUCCESS -->
+            <div class="booking-success" id="bookingSuccess">
+              <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h3>Your Royal Seat is Reserved!</h3>
+              <p>Thank you for booking with Nawabi Kacchi. We've sent a confirmation to your email.<br />
+                 We can't wait to welcome you to our table.</p>
+              <a href="index.html" class="btn-primary">Back to Home</a>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- BOOKING ASIDE -->
+        <aside class="booking-aside reveal">
+          <div class="aside-image"></div>
+
+          <div class="aside-box">
+            <h4><i class="fa-solid fa-circle-info"></i> Good to Know</h4>
+            <ul class="tick-list">
+              <li><i class="fa-solid fa-check"></i> Reservations are held for 15 minutes past the booking time.</li>
+              <li><i class="fa-solid fa-check"></i> Complimentary welcome Borhani for all booked guests.</li>
+              <li><i class="fa-solid fa-check"></i> Free cancellation up to 3 hours before your slot.</li>
+              <li><i class="fa-solid fa-check"></i> Groups of 8+ please call us directly for special arrangements.</li>
+              <li><i class="fa-solid fa-check"></i> Fully accessible venue &mdash; wheelchair-friendly seating available.</li>
+            </ul>
+          </div>
+
+          <div class="aside-box aside-highlight">
+            <h4><i class="fa-solid fa-gift"></i> Special Offer</h4>
+            <p>Book any weekday lunch between <strong>12&ndash;3 PM</strong> and enjoy a <strong>15% off</strong> on all Biryani platters.</p>
+          </div>
+
+          <div class="aside-contact">
+            <h4>Prefer to Call?</h4>
+            <a href="tel:+442079460123" class="aside-call">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>+44 20 7946 0123</strong>
+                <span>Mon&ndash;Sun 11:00 AM &ndash; 10:00 PM</span>
+              </div>
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+            <div class="logo-text">
+              <span class="logo-main">Nawabi Kacchi</span>
+              <span class="logo-sub">Authentic Bangladeshi Cuisine</span>
+            </div>
+          </a>
+          <p>Bringing the royal flavours of Bangladesh to the heart of the United Kingdom since 2012.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book-a-table.html">Book a Table</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="hours-list">
+            <li><span>Mon &ndash; Thu</span><span>12:00 &ndash; 22:00</span></li>
+            <li><span>Fri &ndash; Sat</span><span>12:00 &ndash; 23:00</span></li>
+            <li><span>Sunday</span><span>13:00 &ndash; 21:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> 45 Brick Lane, London, E1 6PU</li>
+            <li><i class="fa-solid fa-phone"></i> +44 20 7946 0123</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@nawabikacchi.co.uk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nawabi Kacchi. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart" style="color:#c9a227"></i> for Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/book.js"></script>
+</body>
+</html>
